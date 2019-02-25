@@ -83,6 +83,18 @@ console.log(`antonietta likes math she can multiply 3 and 4 to be ${antonietta.m
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
 //it's technically an object ^_^
+
+/*
+  // so glad it doesn't look like this anymore!
+  var Person = function(name, age){
+    this.name = name;
+    this.age = age;
+  };
+  Person.prototype.speak = function(){
+    console.log(this.name);
+  };
+*/
+
 class Person{
   constructor(name, age){
     this.name = name;
