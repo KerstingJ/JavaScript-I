@@ -81,6 +81,8 @@ console.log(`antonietta likes math she can multiply 3 and 4 to be ${antonietta.m
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
+
+//it's technically an object ^_^
 class Person{
   constructor(name, age){
     this.name = name;
