@@ -95,8 +95,8 @@ class Person{
 }
  
 let parent = new Person("Susan", 70);
-parent.child = new Person("George", 50);;
-child.grandchild = new Person("Sam", 30);;
+parent.child = new Person("George", 50);
+parent.child.grandchild = new Person("Sam", 30);
 
 
 // Log the parent object's name
@@ -116,3 +116,5 @@ parent.child.speak();
 
 // Have the grandchild speak
 parent.child.grandchild.speak();
+
+console.log(JSON.stringify(parent));
