@@ -93,13 +93,10 @@ class Person{
     console.log(`my name is ${this.name}`);
   }
 }
-
-let grandchild = new Person("Sam", 30);
-let child = new Person("George", 50);
+ 
 let parent = new Person("Susan", 70);
-parent.child = child;
-child.child = grandchild;
-parent.grandchild = child.child;
+parent.child = new Person("George", 50);;
+child.grandchild = new Person("Sam", 30);;
 
 
 // Log the parent object's name
@@ -109,13 +106,13 @@ console.log(`parents name is ${parent.name}`);
 console.log(`childs age is ${parent.child.age}`);
 
 // Log the name and age of the grandchild
-console.log(`gandchilds name is ${parent.grandchild.name} and he is ${parent.grandchild.age} years old`);
+console.log(`gandchilds name is ${parent.child.grandchild.name} and he is ${parent.child.grandchild.age} years old`);
 
 // Have the parent speak
 parent.speak();
 
 // Have the child speak
-child.speak();
+parent.child.speak();
 
 // Have the grandchild speak
-grandchild.speak();
+parent.child.grandchild.speak();
